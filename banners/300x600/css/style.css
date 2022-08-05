@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+ 
+#container{
+    position: relative;
+    width: 300px;
+    height: 600px;
+    overflow: hidden;
+    border:solid 17px white;
+    margin: 0 auto;
+}
+#bg-img1{
+    position: absolute;
+    width: 274px;
+}
+#images{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width:300px;
+    height: 4000px;
+    background-image: url(../images/imgRoad_300x600.jpg);
+    background-position-x: -10px;
+    background-position-y:180px;
+    animation-name: moving;
+    animation-duration: 5.8s;
+    animation-timing-function: linear;
+}
+@keyframes moving{
+    0%{top: -3000px;}
+    100%{top: 0px;}
+}
+
+#car{
+    position: absolute;
+    bottom: 53px;
+    left: 55px;
+    transform: translate(28px , 100px);
+    animation-name: drive;
+    animation-duration: 0.6s;
+    animation-timing-function: linear;
+}
+@keyframes drive{
+    0%{
+        transform: translate(0px , 0px);
+    }
+    100%{
+        transform: translate(28px , 100px);
+    }
+}
+#dots,#dots2{
+    position: absolute;
+    color: white;
+    top: 0;
+    right: 0;
+    font-size: 25px;
+    transform: rotate(-80deg) translate(-123px,200px);  
+}
+#dots2{
+    transform: rotate(240deg) translate(-206px,-30px);  
+}
+#sympols{
+    position: absolute;
+    top: 130px;
+    left: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 1px white;
+    width: 120px;
+    height: 120px;
+    background-color: black;
+    opacity: 0.6;
+}
+.icons{
+    position: relative;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+}
+#icon-1,#icon-2,#icon-3,#icon-4,#icon-1-1,#icon-3-3{
+    position: absolute;
+    top: -10px;
+    left: -9px;
+    width: 726px;
+    height: auto;
+}
+#icon-1-1{
+    left: -493px;
+    opacity: 0;
+}
+#icon-2{
+    left: -303px;
+}
+#icon-3{
+    left: -131px;
+    top: -63px;
+}
+#icon-3-3{
+    top: -63px;
+    left: -615px;
+    opacity: 0;
+}
+#icon-4{
+    left: -425px;
+    top: -63px;
+} 
+#tracker-1{
+    position: absolute;
+    transform: scale(0);
+}
+#tracker-2{
+    position: absolute;
+    transform: scale(0);
+}
+#route{
+    position: absolute;
+    height: 142px;
+    width: 119px;
+    border: solid 1px white;
+    top: 56px;
+    right: 9px;
+    background-color: black;
+    opacity: 0.6;
+    overflow: hidden;
+}
+#icon-img1{
+    position: absolute;
+}
+#icon-img2{
+    position: absolute;
+    bottom: -3px;
+    left: -13px;
+}
+#icon-img3{
+    position: absolute;
+    bottom: -192px;
+    left: 56px;
+    animation-name: road-line;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+ @keyframes road-line{
+    0%{bottom: -180px;}
+    100%{bottom: -192px;}
+}
+#deer{
+    position: absolute;
+    top: 42px;
+    left: 20px;
+    transform: translate(0px,0px) scale(0.2);
+    border: solid 1px white;
+    width: 40px;
+    height: 40px;
+}
+#man{
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    height: 64px;
+    width: 32px;
+    transform: translate(0px,0px) scale(0.2);
+}
+#border-1{
+    position: absolute;
+    width: 27px;
+    height: 30px;
+    border: solid 1px white;
+    top: 40px;
+    right: 40px;
+    transform: scale(0.2) translate(0px , 0px);
+}
+#border-2{
+    position: absolute;
+    width: 19px;
+    height: 18px;
+    border: solid 1px white;
+    top: 41px;
+    right: 45px;
+    transform: scale(0.2) translate(0px, 0px);  
+}
+#sympols,#route{
+    transform: scale(0);
+}
+#text-1{
+    position: absolute;
+    width: 265px;
+    height: 400px;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.texts{
+    position: relative;
+    top: 70px;
+    left: 7px;
+    width: 253px;
+    height: 54px;
+    overflow: hidden;
+}
+#corner{
+    position: absolute;
+    top: 6px;
+    right: 10px;
+    width: 80px;
+    height: 50px;
+    overflow: hidden;
+}
+#corner-text{
+    position: absolute;
+    width: 900px;
+    height: auto;
+    top: 0px;
+    left: -19px;
+    opacity: 0;
+    z-index: 2;
+}
+#sprite-1,#sprite-2,#sprite-3,#sprite-4,#sprite-5,#sprite-6{
+    position: absolute;
+    width: 900px;
+    height: auto;
+    top: -120px;
+    left: -324px;
+    opacity: 0;
+}
+#sprite-2{
+    top: -170px;
+    left: -625px;   
+}
+#sprite-3{
+    top: -217px;
+    left: -25px;
+}
+#sprite-4{
+    top: -268px;
+    left: -324px;
+}
+#sprite-5{
+    top: -319px;
+    left: -626px;
+}
+#sprite-6{
+    top: -368px;
+    left: -24px;
+}
+#bgimg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-106%);
+    width: 266px;
+    height: 566px;
+    z-index: 1;
+}
+#final{
+    position: absolute;
+    top: 95px;
+    left: 10px;
+    width: 247px;
+    height: 460px;
+    overflow: hidden;
+}
+.end{
+    position: relative;
+    top: 0px;
+    left: 1px;
+    height: 60px;
+    width: 243px;
+    overflow: hidden;
+}
+#sprite-7,#sprite-8,#sprite-9,#sprite-10{
+    position: absolute;
+    width: 900px;
+    height: auto;
+    top: -121px;
+    left: -323px;
+    opacity: 0;
+}
+#sprite-8{
+    top: -178px;
+    left: -623px;
+}
+#sprite-9{
+    top: -231px;
+    left: -23px;
+}
+#sprite-10{
+    top: -285px;
+    left: -322px;
+}
+#conclusion{
+    position: relative;
+    overflow: hidden;
+    width: 220px;
+    height: 100px;
+    bottom: -86px;
+    left: 12px;
+}
+#sprite-11{
+    position: absolute;
+    width: 900px;
+    height: auto;
+    top: -420px;
+    left: -628px;
+    opacity: 0;
+}

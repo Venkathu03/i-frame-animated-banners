@@ -1,0 +1,21 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 160px;
+    height: 282px;
+    background-image: url('../images/man-img.jpeg');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    margin: 0 auto;
+    border: solid 1px black;
+    animation-name: man-walk;
+    animation-duration: 0.8s;
+    animation-timing-function: steps(8);
+    animation-iteration-count: infinite;
+}
+@keyframes man-walk{
+    100%{background-position:-1280px 0;}
+}

@@ -1,0 +1,171 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    position: relative;
+    width: 300px;
+    height: 600px;
+    overflow: hidden;
+    border: solid 1px black;
+}
+#bg-img1{
+    position: absolute;
+    width: 300px;
+    height: auto;
+}
+.sprite-img{
+    position: relative;
+    top: 20px;
+    left: 7px;
+    width: 255px;
+    height: 60px;
+    overflow: hidden;
+    
+}
+#img-1,#img-2,#img-3,#img-4,#img-5{
+    position: absolute;
+    width: 300px;
+    height: auto;
+    top: -17px;
+    left: -15px;
+    opacity: 0;
+}
+#img-2{
+    top: -78px;
+    
+}
+#img-3{
+    top: -135px;
+    
+}
+#img-4{
+    top: -196px;
+    
+}
+#img-5{
+    top: -255px;
+    
+}
+#container-2{
+    position: absolute;
+    width: 333px;
+    height: 337px;
+    overflow: hidden;
+    margin: -75px -60px;
+    transform: translateX(280px);
+
+}
+
+#statues{
+    position: relative;
+    width: 5200px;
+    height: 400px;
+    transform: translateX(0);
+    animation-name: couple;
+    animation-timing-function: steps(61);
+    animation-duration: 2s;
+    animation-delay: 2.5s;
+}
+@keyframes couple{
+    100%{transform: translateX(-24400px);}
+}
+#statue-1{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#statue-2{
+    position: absolute;
+    top: -400px;
+    left: 5200px;
+}
+#statue-3{
+    position: absolute;
+    top: -800px;
+    left: 10400px;
+}
+#statue-4{
+    position: absolute;
+    top: -1200px;
+    left: 15600px;
+}
+#statue-5{
+    position: absolute;
+    top: -1600px;
+    left: 20800px;
+}
+.bottom-logo{
+    position: relative;
+    bottom: -238px;
+    left: 7px;
+    width: 255px;
+    height: 60px;
+    overflow: hidden;
+}
+#logo{
+    position: absolute;
+    width: 300px;
+    height: auto;
+    bottom: -13px;
+    left: -15px;
+    opacity: 0;
+    
+}
+.background{
+    position: relative;
+    width: 300px;
+    height: 900px;
+    top: 0;
+    left: 0;
+}
+#blue{
+    position: absolute;
+    width: 300px;
+    height: auto;
+    top: -360px;
+    opacity: 0;
+}
+.single-text{
+    position: relative;
+    top: 200px;
+    left: 10px;
+    width: 255px;
+    height: 55px;
+    
+
+}
+#text-img{
+    position: absolute;
+    width: 300px;
+    height: auto;
+    top: -200px;
+    left: -10px;
+    opacity: 0;
+}
+
+#white{
+    position: absolute;
+    width: 300px;
+    height: auto;
+    top: -360px;
+    left: 0;
+    opacity: 0;
+}
+#text-img2{
+    position: absolute;
+    width: 300px;
+    height: auto;
+    top: -365px;
+    left: 0px;
+    opacity: 0;
+}
+#three{
+    position: absolute;
+    width: 300px;
+    height: auto;
+    top: -365px;
+    left: 0px;
+    opacity: 0;
+}
